@@ -1,4 +1,4 @@
-# Laravel GeoIP2
+# Laravel GeoIp22
 
 ## Installation
 
@@ -11,29 +11,25 @@ $ composer require faustbrian/laravel-geoip2
 And then include the service provider within `config/app.php`.
 
 ``` php
-'providers' => [
-    BrianFaust\GeoIP\GeoIPServiceProvider::class
-];
+BrianFaust\GeoIp2\GeoIp2ServiceProvider::class
 ```
 
 And, for convenience, add facades aliases to this same file at the bottom:
 ``` php
 'aliases' => [
-    'GeoIP' => BrianFaust\GeoIP\Facades\GeoIP::class,
-];
+    'GeoIp2' => BrianFaust\GeoIp2\Facades\GeoIp2::class
 ```
 
 At last, to publish the configuration you need to run:
 
 ```bash
-php artisan vendor:publish --provider="BrianFaust\GeoIP\GeoIPServiceProvider"
+php artisan vendor:publish --provider="BrianFaust\GeoIp2\GeoIp2ServiceProvider"
 ```
 
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+...
 ```
 
 ## Security
