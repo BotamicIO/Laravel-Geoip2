@@ -11,7 +11,9 @@
 
 namespace BrianFaust\GeoIp2;
 
-class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
+use BrianFaust\ServiceProvider\ServiceProvider;
+
+class GeoIp2ServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -21,7 +23,7 @@ class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
         $this->publishConfig();
 
         $this->publishes([
-            __DIR__.'/../resources/data/GeoLite2-City.mmdb' => storage_path('app/GeoIp2/GeoLite2-City.mmdb'),
+            __DIR__.'/../resources/data/GeoLite2-City.mmdb'    => storage_path('app/GeoIp2/GeoLite2-City.mmdb'),
             __DIR__.'/../resources/data/GeoLite2-Country.mmdb' => storage_path('app/GeoIp2/GeoLite2-Country.mmdb'),
         ], 'resources');
     }
