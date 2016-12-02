@@ -11,9 +11,9 @@
 
 namespace BrianFaust\Tests\GeoIp2\Facades;
 
-use GrahamCampbell\TestBenchCore\FacadeTrait;
-use BrianFaust\Tests\GeoIp2\AbstractTestCase;
 use BrianFaust\GeoIp2\GeoIp2;
+use BrianFaust\Tests\GeoIp2\AbstractTestCase;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class FacadeTest extends AbstractTestCase
 {
