@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\GeoIp2;
 
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 
-class GeoIp2ServiceProvider extends ServiceProvider
+class GeoIp2ServiceProvider extends AbstractServiceProvider
 {
     /**
      * Bootstrap the application services.
