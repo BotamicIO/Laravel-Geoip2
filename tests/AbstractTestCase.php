@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel GeoIP2.
  *
@@ -27,6 +24,6 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app): string
     {
-        return \BrianFaust\GeoIp2\ServiceProvider::class;
+        return \BrianFaust\GeoIp2\GeoIp2ServiceProvider::class;
     }
 }
