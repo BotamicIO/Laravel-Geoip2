@@ -25,7 +25,7 @@ class GeoIp2ServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/../data/GeoLite2-City.mmdb'    => storage_path('app/GeoIp2/GeoLite2-City.mmdb'),
+            __DIR__.'/../data/GeoLite2-City.mmdb' => storage_path('app/GeoIp2/GeoLite2-City.mmdb'),
             __DIR__.'/../data/GeoLite2-Country.mmdb' => storage_path('app/GeoIp2/GeoLite2-Country.mmdb'),
         ], 'data');
     }
@@ -37,6 +37,14 @@ class GeoIp2ServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-geoip2.php', 'laravel-geoip2');
 
+        $this->registerBuilder();
+    }
+
+    /**
+     * Register the builder.
+     */
+    private function registerBuilder()
+    {
         $this->app->singleton('geoip2', function ($app) {
             return new GeoIp2($app->config['laravel-geoip2']);
         });
