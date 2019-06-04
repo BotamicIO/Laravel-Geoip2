@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel GeoIP2.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Tests\GeoIP2;
+namespace Artisanry\Tests\GeoIP2;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
 
@@ -26,6 +26,6 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app): string
     {
-        return \BrianFaust\GeoIp2\GeoIp2ServiceProvider::class;
+        return \Artisanry\GeoIp2\GeoIp2ServiceProvider::class;
     }
 }

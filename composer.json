@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-geoip2",
+    "name": "artisanry/geoip2",
     "description": "A Laravel 5 package for MaxMind GeoIP2 support.",
-    "keywords": ["laravel", "framework", "Laravel-GeoIP2", "Laravel GeoIP2", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-GeoIP2", "Laravel GeoIP2"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\GeoIp2\\": "src/"
+            "Artisanry\\GeoIp2\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\GeoIp2\\": "tests"
+            "Artisanry\\Tests\\GeoIp2\\": "tests"
         }
     },
     "config": {
@@ -38,10 +38,10 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\GeoIp2\\GeoIp2ServiceProvider"
+                "Artisanry\\GeoIp2\\GeoIp2ServiceProvider"
             ],
             "aliases": {
-                "GeoIp2": "BrianFaust\\GeoIp2\\Facades\\GeoIp2"
+                "GeoIp2": "Artisanry\\GeoIp2\\Facades\\GeoIp2"
             }
         }
     },
