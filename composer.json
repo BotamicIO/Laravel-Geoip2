@@ -8,16 +8,14 @@
         "Laravel GeoIP2"
     ],
     "license": "MPL-2.0",
-    "authors": [
-        {
-            "name": "Brian Faust",
-            "email": "hello@basecode.sh",
-            "homepage": "https://basecode.sh"
-        }
-    ],
+    "authors": [{
+        "name": "Brian Faust",
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
+    }],
     "require": {
         "php": "^7.2",
-        "illuminate/support": "^5.8",
+        "illuminate/support": "^5.8|^6.0",
         "geoip2/geoip2": "~2.8"
     },
     "require-dev": {
